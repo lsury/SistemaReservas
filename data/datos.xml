@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+    <usuarios>
+        <usuario>
+            <id>admin</id>
+            <clave>admin</clave>
+            <rol>ADMINISTRADOR</rol>
+        </usuario>
+    </usuarios>
+
+    <categorias>
+    </categorias>
+
+    <recursos>
+    </recursos>
+
+    <reservas>
+    </reservas>
+</data>

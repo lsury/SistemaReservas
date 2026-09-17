@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="reservas.presentation.recursos.View">
+  <grid id="root" binding="panelPrincipal" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="10" vgap="10">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="20" y="20" width="900" height="600"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+
+      <grid id="formulario" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="8" vgap="8">
+        <margin top="8" left="8" bottom="8" right="8"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="etched" title="Datos del Recurso"/>
+        <children>
+
+          <component id="lblId" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="ID / Activo:"/>
+            </properties>
+          </component>
+
+          <component id="id" class="javax.swing.JTextField" binding="id">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+
+          <component id="lblCategoria" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Categoría:"/>
+            </properties>
+          </component>
+
+          <component id="categoria" class="javax.swing.JComboBox" binding="categoria">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+
+          <component id="lblDescripcion" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Descripción:"/>
+            </properties>
+          </component>
+
+          <component id="descripcion" class="javax.swing.JTextField" binding="descripcion">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+
+        </children>
+      </grid>
+
+      <grid id="filtro" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="8" vgap="5">
+        <margin top="5" left="8" bottom="5" right="8"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="etched" title="Filtro"/>
+        <children>
+
+          <component id="lblFiltro" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Categoría:"/>
+            </properties>
+          </component>
+
+          <component id="filtroCategoria" class="javax.swing.JComboBox" binding="filtroCategoria">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+
+          <component id="filtrar" class="javax.swing.JButton" binding="filtrar">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Filtrar"/>
+            </properties>
+          </component>
+
+        </children>
+      </grid>
+
+      <grid id="botonera" layout-manager="FlowLayout" hgap="8" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+
+          <component id="guardar" class="javax.swing.JButton" binding="guardar">
+            <constraints/>
+            <properties>
+              <text value="Guardar"/>
+            </properties>
+          </component>
+
+          <component id="modificar" class="javax.swing.JButton" binding="modificar">
+            <constraints/>
+            <properties>
+              <text value="Modificar"/>
+            </properties>
+          </component>
+
+          <component id="eliminar" class="javax.swing.JButton" binding="eliminar">
+            <constraints/>
+            <properties>
+              <text value="Eliminar"/>
+            </properties>
+          </component>
+
+          <component id="limpiar" class="javax.swing.JButton" binding="limpiar">
+            <constraints/>
+            <properties>
+              <text value="Limpiar"/>
+            </properties>
+          </component>
+
+          <component id="pdf" class="javax.swing.JButton" binding="pdf">
+            <constraints/>
+            <properties>
+              <text value="Generar PDF"/>
+            </properties>
+          </component>
+
+        </children>
+      </grid>
+
+      <scrollpane id="scrollTabla">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="etched" title="Recursos"/>
+        <children>
+          <component id="tabla" class="javax.swing.JTable" binding="tabla">
+            <constraints/>
+            <properties>
+              <autoCreateRowSorter value="true"/>
+              <fillsViewportHeight value="true"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+
+    </children>
+  </grid>
+</form>

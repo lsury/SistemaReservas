@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="reservas.presentation.calendarizacion.View">
+  <grid id="root" binding="panelPrincipal" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="10" vgap="10">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="20" y="20" width="1000" height="650"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+
+      <grid id="filtros" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="8" vgap="8">
+        <margin top="8" left="8" bottom="8" right="8"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="etched" title="Consulta de Calendarización"/>
+        <children>
+
+          <component id="lblFecha" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Fecha:"/>
+            </properties>
+          </component>
+
+          <component id="fecha" class="com.github.lgooddatepicker.components.DatePicker" binding="fecha">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+
+          <component id="consultar" class="javax.swing.JButton" binding="consultar">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Consultar"/>
+            </properties>
+          </component>
+
+          <component id="lblCategoria" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Categoría:"/>
+            </properties>
+          </component>
+
+          <component id="categoria" class="javax.swing.JComboBox" binding="categoria">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+
+          <component id="pdf" class="javax.swing.JButton" binding="pdf">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Generar PDF"/>
+            </properties>
+          </component>
+
+        </children>
+      </grid>
+
+      <scrollpane id="scrollTabla">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="etched" title="Calendarización de Recursos"/>
+        <children>
+          <component id="tabla" class="javax.swing.JTable" binding="tabla">
+            <constraints/>
+            <properties>
+              <autoResizeMode value="0"/>
+              <cellSelectionEnabled value="true"/>
+              <fillsViewportHeight value="true"/>
+              <rowHeight value="45"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+
+    </children>
+  </grid>
+</form>
